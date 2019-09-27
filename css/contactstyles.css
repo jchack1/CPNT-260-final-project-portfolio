@@ -1,0 +1,67 @@
+@import url(reset.css);
+@import url(global-styles.css);
+
+
+main{
+    margin-left: 5vmin;
+    width: auto;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: 10ch 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    max-width: 80vw;
+    margin: auto;
+    border: 0;
+}
+
+label{
+    grid-column: 1/2;
+}
+
+input, textarea{
+    grid-column: 2/3;
+    border: 1px solid #a17e7c;
+    margin-bottom: 2vmin;
+}
+
+#name, #email{
+    width: 30vw;
+}
+
+#subject, textarea{
+    width: 60vw;
+}
+
+#submit-button{
+    padding: 2vmin 5vmin;
+    margin: 2vmin;
+    grid-column: 2/3;
+    width: 20vmin;
+    max-width: 200px;
+    min-width: 150px;
+    
+    background-color:#9c1208;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 0;
+}
+
+#submit-button:hover{
+    background-color: #bf7a0b;
+}
+
+
+@media all and (min-width: 480px){
+    #name, #email{
+        width: 30vw;
+    }
+
+    main{
+        margin: 5vmin auto;
+        width: 70vw;
+    }
+}
